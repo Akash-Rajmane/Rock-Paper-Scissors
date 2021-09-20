@@ -1,0 +1,136 @@
+body{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+}
+
+.neonText {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+#btn-container{
+    margin-top: 90px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    color: #ccc;
+    background-color: rgb(18, 18, 248);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgb(87, 12, 131);
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+.container{
+    margin-top: 25px;
+}
+
+#modal-para{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.user{  
+    text-align: center;
+    color: indigo;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(195, 156, 233);
+    letter-spacing: 1px;   
+    background-color: greenyellow;
+    border-radius: 10px; 
+}
+
+#img1, #img2, #img3{
+    width:150px;
+    height:150px;
+    transform: scaleX(-1);
+    display: none;
+}
+
+#user-choice{
+    margin-left: 180px;
+}
+
+#img4, #img5, #img6{
+    width:150px;
+    height:150px;
+    display: none;
+}
+
+#computer-choice{
+    margin-left: 180px;
+}
+
+#result{
+    margin-top: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    color:red;
+    font-weight: bolder;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    color:#fff; 
+    font-weight: bolder;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#gameRulesBtn{
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 120px;
+    background-color: rgb(165, 5, 5); 
+    border-radius: 5px;
+}
+
+#modal-img1, #modal-img2, #modal-img3{
+    width: 50px;
+    height: 50px;
+}
+
+#play-again{
+    margin-top: 15px;
+    float: right;
+    margin-right: 25px;
+    width: 120px;
+    background-color: green; 
+    border-radius: 5px;
+}
+
+#reset{
+    margin-left: 470px;
+    margin-top: 15px;
+    width: 120px;
+    background-color: #ccc; 
+    border-radius: 5px;
+    color: black;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #fc12fc, 0 0 70px #db1818;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #f066ab, 0 0 50px #eb539f, 0 0 60px #4dbeff, 0 0 70px #2d49e9, 0 0 80px #180db1;
+    }
+}
+

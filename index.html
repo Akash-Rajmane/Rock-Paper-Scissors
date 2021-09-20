@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Rock Paper Scissor</h1>
+
+    <button id="gameRulesBtn" data-bs-toggle="modal" data-bs-target="#gameRules-Modal">Game Rules</button>
+    <button id="play-again" onclick="playAgain()">Play Again</button>
+    <button id="reset" onclick="resetGame()">Reset</button>
+
+    <div class="modal" id="gameRules-Modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h2 class="modal-title">Game Rules</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modal-para">1.<img id="modal-img1" src="F:\Front End\r p s\assets\rock.png"> represents rock,
+                    <img id="modal-img2" src="F:\Front End\r p s\assets\paper.png"> represents paper,
+                    <img id="modal-img3" src="F:\Front End\r p s\assets\scissor.png"> represents scissor.
+                    <br>2. Rock beats scissor, scissor beats paper, paper beats rock.
+                </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="user">You : <span id="user-score">0</span></p>
+          </div>
+          <div class="col">
+            <p class="user">Computer : <span id="computer-score">0</span></p>
+          </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="user-choice">
+                    <img id="img1" src="F:\Front End\r p s\assets\paper.png">
+                    <img id="img2" src="F:\Front End\r p s\assets\rock.png">
+                    <img id="img3" src="F:\Front End\r p s\assets\scissor.png">
+                </div>
+            </div>
+            <div class="col">
+                <div id="computer-choice">
+                    <img id="img4" src="F:\Front End\r p s\assets\scissor.png">
+                    <img id="img5" src="F:\Front End\r p s\assets\rock.png">
+                    <img id="img6" src="F:\Front End\r p s\assets\paper.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="result" class="neonText" hidden></h2>
+
+    <div class="d-grid gap-5 d-md-flex justify-content-md-center" id="btn-container" >
+        <button id="rock">rock</button>
+        <button id="paper">paper</button>
+        <button id="scissor">scissor</button>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>
