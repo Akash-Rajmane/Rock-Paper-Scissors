@@ -19,7 +19,7 @@ HTML, CSS, JAVASCRIPT, Bootstrap
 
 ### How I Made It ?
 When any one of buttons rock, paper and scissor when clicked, it makes respective image visible & these three buttons are disabled.
-For computer turn, I have used Math.random() function to generate a number between 1 to 3, and for that number an image is dispalyed. 
+For computer turn, I have used Math.random() function to generate a number between 1 to 3, and for that number an image is displayed. 
 Depending on user & computer choices respective result is displayed.
 Play again button enables rock, paper, scissor button and hides images and result of the game.
 Reset button makes scores zero and performs the function of play again.
