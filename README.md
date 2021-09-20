@@ -25,4 +25,10 @@ Play again button enables rock, paper, scissor button and hides images and resul
 Reset button makes scores zero and performs the function of play again.
 Game Rules button when clicked shows game rules. It displays a bootstrap modal.
 
+### Hosted Link (Github) :
+https://akash-rajmane.github.io/Rock-Paper-Scissor/
+
+### Hosted Link (Netlify) :
+https://quizzical-bartik-629631.netlify.app/
+
 
