@@ -5,12 +5,12 @@ var c = 0;
 var userScore = document.getElementById("user-score");
 var computerScore = document.getElementById("computer-score");
 
-document.querySelector("#scissor").addEventListener("click", () => {
+document.querySelector("#scissors").addEventListener("click", () => {
     document.querySelector("#img3").style.display = "block";
     document.getElementById("scissors").disabled = true;
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
-    userChoice = "scissor";
+    userChoice = "scissors";
     computerTurn();
     resultOfGame();
 })
