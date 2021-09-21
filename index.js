@@ -7,7 +7,7 @@ var computerScore = document.getElementById("computer-score");
 
 document.querySelector("#scissor").addEventListener("click", () => {
     document.querySelector("#img3").style.display = "block";
-    document.getElementById("scissor").disabled = true;
+    document.getElementById("scissors").disabled = true;
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     userChoice = "scissor";
@@ -18,7 +18,7 @@ document.querySelector("#scissor").addEventListener("click", () => {
 document.querySelector("#rock").addEventListener("click", () => {
     document.querySelector("#img2").style.display = "block";
     document.getElementById("rock").disabled = true;
-    document.getElementById("scissor").disabled = true;
+    document.getElementById("scissors").disabled = true;
     document.getElementById("paper").disabled = true;
     userChoice = "rock";
     computerTurn();
@@ -28,7 +28,7 @@ document.querySelector("#rock").addEventListener("click", () => {
 document.querySelector("#paper").addEventListener("click", () => {
     document.querySelector("#img1").style.display = "block";
     document.getElementById("rock").disabled = true;
-    document.getElementById("scissor").disabled = true;
+    document.getElementById("scissors").disabled = true;
     document.getElementById("paper").disabled = true;
     userChoice = "paper";
     computerTurn();
@@ -43,7 +43,7 @@ function computerTurn(){
     }
     else if( randomNum===2 ){
         document.querySelector("#img4").style.display = "block";
-        computerChoice = "scissor";
+        computerChoice = "scissors";
     }
     else if( randomNum==3 ){
         document.querySelector("#img6").style.display = "block";
@@ -54,7 +54,7 @@ function computerTurn(){
 function resultOfGame(){
     counter();
     if( userChoice==="rock" ){
-        if( computerChoice==="scissor" ){
+        if( computerChoice==="scissors" ){
             document.querySelector("#result").innerHTML = "Congrats ! You win";
             document.querySelector("#result").hidden = false;
         }
@@ -86,7 +86,7 @@ function resultOfGame(){
             document.querySelector("#result").innerHTML = "Congrats ! You win";
             document.querySelector("#result").hidden = false;
         }
-        else if(computerChoice==="scissor"){
+        else if(computerChoice==="scissors"){
             document.querySelector("#result").innerHTML = "It is a draw";
             document.querySelector("#result").hidden = false;
         }
@@ -108,7 +108,7 @@ function playAgain(){
     document.querySelector("#result").hidden = true;
 
     document.getElementById("rock").disabled = false;
-    document.getElementById("scissor").disabled = false;
+    document.getElementById("scissors").disabled = false;
     document.getElementById("paper").disabled = false;
 
 }
@@ -123,7 +123,7 @@ function resetGame(){
 
 
 function counter(){
-    if( userChoice=="rock" && computerChoice=="scissor" ){
+    if( userChoice=="rock" && computerChoice=="scissors" ){
         u = u+1;
         userScore.innerHTML = u;
     }
@@ -131,7 +131,7 @@ function counter(){
         u = u+1;
         userScore.innerHTML = u;
     }
-    else if( userChoice=="scissor" && computerChoice=="paper" ){
+    else if( userChoice=="scissors" && computerChoice=="paper" ){
         u = u+1;
         userScore.innerHTML = u;
     }
@@ -139,11 +139,11 @@ function counter(){
         c = c+1;
         computerScore.innerHTML = c;
     }
-    else if( userChoice=="paper" && computerChoice=="scissor" ){
+    else if( userChoice=="paper" && computerChoice=="scissors" ){
         c = c+1;
         computerScore.innerHTML = c;
     }
-    else if( userChoice=="scissor" && computerChoice=="rock" ){
+    else if( userChoice=="scissors" && computerChoice=="rock" ){
         c = c+1;
         computerScore.innerHTML = c;
     }
